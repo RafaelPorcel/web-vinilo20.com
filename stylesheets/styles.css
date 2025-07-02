@@ -112,16 +112,20 @@ html, body {
         justify-content: center;
     }
 
+    .main-section-destacados {
+        gap: 8px !important;
+    }
+
     .main-section-offers, .main-section-events {
-        margin-left: 16px !important;
-        margin-right: 16px !important;
-        padding-left: 8px !important;
-        padding-right: 8px !important;
-        background-color: rgba(255,255,255,0.5);
-        width: auto !important;
-        min-width: 0 !important;
-        max-width: none !important;
-        box-sizing: border-box;
+        flex: 1 1 48% !important;
+        max-width: 48% !important;
+    }
+
+    .btn-destacado {
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 }
 
@@ -372,6 +376,7 @@ main {
     height: auto;
     object-fit: cover;
     border-radius: 8px;
+    opacity: 0.85;
 }
 
 .main-section-gallery {
@@ -414,6 +419,7 @@ main {
     height: auto;
     object-fit: cover;
     border-radius: 8px;
+    opacity: 0.85;
 }
 
 .main-contact-section iframe{
