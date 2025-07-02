@@ -61,8 +61,18 @@ html, body {
 /* Diseño responsive */
 @media screen and (max-width: 768px) {
     .main-container {
-        flex-direction: column;
-        align-items: center;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 8px !important;
+    }
+    .main-section-offers {
+        flex: 1 1 48% !important;
+        max-width: 48% !important;
+        min-width: 0 !important;
+        width: auto !important;
+        display: block !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 
     .main-section {
@@ -79,20 +89,7 @@ html, body {
         max-width: 100% !important;
     }
 
-    .main-section-offers {
-        max-width: 100% !important;
-    }
-
     .main-contact-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main-section-offers {
-        max-width: 100% !important;
-    }
-
-    .main-contact-offers {
         flex-direction: column;
         align-items: center;
     }
@@ -116,7 +113,7 @@ html, body {
         gap: 8px !important;
     }
 
-    .main-section-offers, .main-section-events {
+    .main-section-events {
         flex: 1 1 48% !important;
         max-width: 48% !important;
     }
@@ -126,6 +123,13 @@ html, body {
         margin-left: auto;
         margin-right: auto;
         display: block;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+    .main-section-offers {
+        flex: 1 1 31% !important;
+        max-width: 31% !important;
     }
 }
 
