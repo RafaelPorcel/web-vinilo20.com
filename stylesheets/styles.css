@@ -112,6 +112,17 @@ html, body {
         justify-content: center;
     }
 
+    .main-section-offers, .main-section-events {
+        margin-left: 16px !important;
+        margin-right: 16px !important;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        background-color: rgba(255,255,255,0.5);
+        width: auto !important;
+        min-width: 0 !important;
+        max-width: none !important;
+        box-sizing: border-box;
+    }
 }
 
 @media screen and (max-width: 900px) {  
