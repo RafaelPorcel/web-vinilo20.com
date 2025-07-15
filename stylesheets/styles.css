@@ -60,105 +60,33 @@ html, body {
 
 /* Diseño responsive */
 @media screen and (max-width: 768px) {
-    .main-container {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        gap: 8px !important;
-    }
-    .main-section-offers {
-        flex: 1 1 48% !important;
-        max-width: 48% !important;
-        min-width: 0 !important;
-        width: auto !important;
-        display: block !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-
-    .main-section {
-        flex: 1 1 100%;
-        width: 100%;
-        min-width: 100%;
-    }
-
-    .main-section-events {
-        max-width: 100% !important;
-    }
-
-    .main-section-gallery {
-        max-width: 100% !important;
-    }
-
-    .main-contact-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main-section-index {
-        margin-top: 80px;
-    }
-
-    .main-section-index-rrss {
-        flex-direction: column;
-        margin-bottom: 10px;
-    }
-
-    .logo {
-        flex-grow: 1;
-        display: flex;
-        justify-content: center;
-    }
-
-    .main-section-destacados {
-        gap: 8px !important;
-    }
-
-    .main-section-events {
-        flex: 1 1 48% !important;
-        max-width: 48% !important;
-    }
-
-    .btn-destacado {
-        align-self: center;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-    .ofertas-carrusel {
-        display: flex;
-        flex-direction: row;
-        overflow-x: auto;
-        gap: 12px;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        margin-bottom: 12px;
-        padding-bottom: 8px;
-    }
-    .ofertas-carrusel .main-section-offers {
-        min-width: 85vw;
-        max-width: 85vw;
-        flex: 0 0 85vw;
-        scroll-snap-align: start;
-        margin: 0;
-    }
-    .main-section-events {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        width: 95vw !important;
-        max-width: 95vw !important;
-        margin-bottom: 12px;
-    }
-    .oferta-inicio, .programacion-inicio {
-        width: 75vw !important;
-        max-width: 75vw !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        display: block !important;
-    }
     .main-section-inicio {
-        flex-direction: column !important;
-        gap: 16px !important;
-        align-items: center !important;
+        display: block !important;
+        width: 100% !important;
+    }
+    .main-section-offers, .main-section-events {
+        width: 85vw !important;
+        max-width: 85vw !important;
+        margin: 0 auto 16px auto !important;
+        box-sizing: border-box;
+        display: block !important;
+        background-color: rgba(255,255,255,0.4);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+    .main-section-offers img, .main-section-events img {
+        width: 100% !important;
+        height: auto !important;
+        display: block !important;
+        border-radius: 8px;
+        margin-bottom: 8px;
+        max-width: 100% !important;
+    }
+    .main-container {
+        display: block !important;
+        padding-bottom: 100px !important;
     }
 }
 
