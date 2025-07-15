@@ -124,6 +124,42 @@ html, body {
         margin-right: auto;
         display: block;
     }
+    .ofertas-carrusel {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 12px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 12px;
+        padding-bottom: 8px;
+    }
+    .ofertas-carrusel .main-section-offers {
+        min-width: 85vw;
+        max-width: 85vw;
+        flex: 0 0 85vw;
+        scroll-snap-align: start;
+        margin: 0;
+    }
+    .main-section-events {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 95vw !important;
+        max-width: 95vw !important;
+        margin-bottom: 12px;
+    }
+    .oferta-inicio, .programacion-inicio {
+        width: 75vw !important;
+        max-width: 75vw !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+    }
+    .main-section-inicio {
+        flex-direction: column !important;
+        gap: 16px !important;
+        align-items: center !important;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1100px) {
@@ -499,4 +535,34 @@ main {
     background-color: #343a40;
     /* color: #ffd700; */
     transform: scale(1.05);
+}
+
+.btn-cocteles {
+    background: linear-gradient(90deg, #ffb347 0%, #ffcc33 100%);
+    color: #222;
+    font-weight: bold;
+    font-size: 1.15em;
+    box-shadow: 0 4px 16px rgba(255, 204, 51, 0.3);
+    border: 2px solid #ffcc33;
+    letter-spacing: 1px;
+    padding: 12px 32px;
+    margin-top: 8px;
+    transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.btn-cocteles:hover {
+    background: linear-gradient(90deg, #ffcc33 0%, #ffb347 100%);
+    color: #fff;
+    transform: scale(1.08);
+    box-shadow: 0 6px 24px rgba(255, 204, 51, 0.5);
+}
+
+.main-section-inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 4px;
+    margin-bottom: 30px;
 }
