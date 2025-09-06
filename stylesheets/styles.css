@@ -526,10 +526,10 @@ main {
 
 .main-section-inicio {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos */
     align-items: flex-start;
-    gap: 30px;
+    gap: 30px; /* Espacio entre ellos */
     margin-top: 4px;
     margin-bottom: 30px;
 }
