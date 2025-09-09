@@ -1,4 +1,15 @@
 User-agent: *
-Disallow:
+Allow: /
 
-Sitemap: https://vinilocopas.es/sitemap.xml
+# Bloquear acceso a archivos innecesarios
+Disallow: /stylesheets/
+Disallow: /video/
+Disallow: /*.css$
+Disallow: /*.js$
+
+# Permitir acceso a imágenes y contenido principal
+Allow: /images/
+Allow: /*.html$
+Allow: /*.xml$
+
+Sitemap: https://www.vinilocopas.es/sitemap.xml
