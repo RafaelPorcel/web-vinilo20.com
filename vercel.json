@@ -10,6 +10,11 @@
       "source": "/index.html",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "https://vinilocopas.es/(.*)",
+      "destination": "https://www.vinilocopas.es/$1",
+      "permanent": true
     }
   ],
   "headers": [
